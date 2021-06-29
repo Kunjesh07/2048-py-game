@@ -32,6 +32,7 @@ class Board:
         self.n=4
         self.window=Tk()
         self.window.title('2048 game')
+        self.window.resizable(width=False, height=False)
         self.gameArea=Frame(self.window,bg= 'azure3')
         self.board=[]
         self.gridCell=[[0]*4 for i in range(4)]
